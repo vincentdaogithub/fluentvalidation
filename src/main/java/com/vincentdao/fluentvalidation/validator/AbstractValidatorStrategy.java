@@ -2,10 +2,8 @@ package com.vincentdao.fluentvalidation.validator;
 
 import com.vincentdao.fluentvalidation.FluentProcess;
 
-public abstract class AbstractValidatorStrategy<
-        S extends AbstractValidatorStrategy<S, P, V>,
-        P extends AbstractValidator<P, ? extends FluentProcess, V>,
-        V> extends AbstractFluent<S, V> {
+public abstract class AbstractValidatorStrategy<S extends AbstractValidatorStrategy<S, P, V>, P extends AbstractValidator<P, ? extends FluentProcess, V>, V>
+        extends AbstractFluent<S, V> {
 
     private final P parentValidator;
     private String message;

@@ -2,10 +2,8 @@ package com.vincentdao.fluentvalidation.validator;
 
 import com.vincentdao.fluentvalidation.FluentProcess;
 
-public abstract class AbstractValidator<
-        S extends AbstractValidator<S, P, V>,
-        P extends FluentProcess,
-        V> extends AbstractFluent<S, V> {
+public abstract class AbstractValidator<S extends AbstractValidator<S, P, V>, P extends FluentProcess, V>
+        extends AbstractFluent<S, V> {
 
     private static final String DEFAULT_NAME = "value";
 

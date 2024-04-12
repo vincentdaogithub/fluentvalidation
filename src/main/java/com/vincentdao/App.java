@@ -11,7 +11,7 @@ public final class App {
 
     public static void main(String[] args) {
         Result<NoValue> result = FluentValidation.start()
-                .check(null)
+                .check((App) null)
                 .withName("lol")
                 .toBeNotNull()
                 .withMessage("haha")
@@ -33,6 +33,12 @@ public final class App {
                 .toBeNotBlank()
                 .and()
                 .toBeNotEmpty()
+                .and()
+                .next()
+                .validate();
+        result = FluentValidation.start()
+                .check(1)
+                .toBeBetween(0, 2)
                 .and()
                 .next()
                 .validate();

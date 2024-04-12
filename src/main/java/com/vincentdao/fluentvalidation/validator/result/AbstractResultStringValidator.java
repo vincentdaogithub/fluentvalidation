@@ -41,23 +41,28 @@ public abstract class AbstractResultStringValidator<S extends AbstractResultStri
         return new ResultStringHasLengthValidatorStrategy<>(value(), self(), result(), length);
     }
 
-    public AbstractResultValidatorStrategy<ResultStringHasLengthLessThanValidatorStrategy<S>, S, String> hasLengthLessThan(int length) {
+    public AbstractResultValidatorStrategy<ResultStringHasLengthLessThanValidatorStrategy<S>, S, String> hasLengthLessThan(
+            int length) {
         return new ResultStringHasLengthLessThanValidatorStrategy<>(value(), self(), result(), length);
     }
 
-    public AbstractResultValidatorStrategy<ResultStringHasLengthGreaterThanValidatorStrategy<S>, S, String> hasLengthGreaterThan(int length) {
+    public AbstractResultValidatorStrategy<ResultStringHasLengthGreaterThanValidatorStrategy<S>, S, String> hasLengthGreaterThan(
+            int length) {
         return new ResultStringHasLengthGreaterThanValidatorStrategy<>(value(), self(), result(), length);
     }
 
-    public AbstractResultValidatorStrategy<ResultStringHasLengthLessThanOrEqualValidatorStrategy<S>, S, String> hasLengthLessThanOrEqualTo(int length) {
+    public AbstractResultValidatorStrategy<ResultStringHasLengthLessThanOrEqualValidatorStrategy<S>, S, String> hasLengthLessThanOrEqualTo(
+            int length) {
         return new ResultStringHasLengthLessThanOrEqualValidatorStrategy<>(value(), self(), result(), length);
     }
 
-    public AbstractResultValidatorStrategy<ResultStringHasLengthGreaterThanOrEqualValidatorStrategy<S>, S, String> hasLengthGreaterThanOrEqualTo(int length) {
+    public AbstractResultValidatorStrategy<ResultStringHasLengthGreaterThanOrEqualValidatorStrategy<S>, S, String> hasLengthGreaterThanOrEqualTo(
+            int length) {
         return new ResultStringHasLengthGreaterThanOrEqualValidatorStrategy<>(value(), self(), result(), length);
     }
 
-    public AbstractResultValidatorStrategy<ResultStringHasLengthBetweenValidatorStrategy<S>, S, String> hasLengthBetween(int start, int end) {
+    public AbstractResultValidatorStrategy<ResultStringHasLengthBetweenValidatorStrategy<S>, S, String> hasLengthBetween(
+            int start, int end) {
         return new ResultStringHasLengthBetweenValidatorStrategy<>(value(), self(), result(), start, end);
     }
 }

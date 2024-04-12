@@ -1,13 +1,12 @@
 package com.vincentdao.fluentvalidation.validator.result;
 
-import com.vincentdao.result.NoValue;
-import com.vincentdao.result.Result;
 import java.util.function.BiPredicate;
 
-public abstract class BiPredicateResultValidatorStrategy<
-        S extends BiPredicateResultValidatorStrategy<S, P, V, O>,
-        P extends AbstractResultValidator<P, V>,
-        V, O> extends AbstractResultValidatorStrategy<S, P, V> {
+import com.vincentdao.result.NoValue;
+import com.vincentdao.result.Result;
+
+public abstract class BiPredicateResultValidatorStrategy<S extends BiPredicateResultValidatorStrategy<S, P, V, O>, P extends AbstractResultValidator<P, V>, V, O>
+        extends AbstractResultValidatorStrategy<S, P, V> {
 
     private final O other;
 

@@ -1,11 +1,12 @@
 package com.vincentdao.fluentvalidation.validator.result.implementation.object;
 
+import java.util.Objects;
+import java.util.function.BiPredicate;
+
 import com.vincentdao.fluentvalidation.validator.result.AbstractResultValidator;
 import com.vincentdao.fluentvalidation.validator.result.BiPredicateResultValidatorStrategy;
 import com.vincentdao.result.NoValue;
 import com.vincentdao.result.Result;
-import java.util.Objects;
-import java.util.function.BiPredicate;
 
 public final class ResultNotEqualValidatorStrategy<P extends AbstractResultValidator<P, V>, V, O>
         extends BiPredicateResultValidatorStrategy<ResultNotEqualValidatorStrategy<P, V, O>, P, V, O> {

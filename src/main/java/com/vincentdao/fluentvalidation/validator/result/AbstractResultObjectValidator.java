@@ -38,7 +38,8 @@ public abstract class AbstractResultObjectValidator<S extends AbstractResultObje
         return new ResultInstanceOfValidatorStrategy<>(value(), self(), result(), clazz);
     }
 
-    public AbstractValidatorStrategy<ResultNotInstanceOfValidatorStrategy<S, V>, S, V> toBeNotInstanceOf(Class<?> clazz) {
+    public AbstractValidatorStrategy<ResultNotInstanceOfValidatorStrategy<S, V>, S, V> toBeNotInstanceOf(
+            Class<?> clazz) {
         return new ResultNotInstanceOfValidatorStrategy<>(value(), self(), result(), clazz);
     }
 }

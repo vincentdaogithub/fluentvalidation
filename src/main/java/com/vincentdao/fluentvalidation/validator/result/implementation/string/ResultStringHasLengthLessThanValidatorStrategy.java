@@ -1,10 +1,11 @@
 package com.vincentdao.fluentvalidation.validator.result.implementation.string;
 
+import java.util.function.BiPredicate;
+
 import com.vincentdao.fluentvalidation.validator.result.AbstractResultValidator;
 import com.vincentdao.fluentvalidation.validator.result.BiPredicateResultValidatorStrategy;
 import com.vincentdao.result.NoValue;
 import com.vincentdao.result.Result;
-import java.util.function.BiPredicate;
 
 public final class ResultStringHasLengthLessThanValidatorStrategy<P extends AbstractResultValidator<P, String>>
         extends BiPredicateResultValidatorStrategy<ResultStringHasLengthLessThanValidatorStrategy<P>, P, String, Integer> {

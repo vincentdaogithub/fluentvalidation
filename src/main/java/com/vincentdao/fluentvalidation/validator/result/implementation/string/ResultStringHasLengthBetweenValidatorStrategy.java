@@ -9,7 +9,8 @@ import com.vincentdao.result.Result;
 public final class ResultStringHasLengthBetweenValidatorStrategy<P extends AbstractResultValidator<P, String>>
         extends TriPredicateResultValidatorStrategy<ResultStringHasLengthBetweenValidatorStrategy<P>, P, String, Integer, Integer> {
 
-    public ResultStringHasLengthBetweenValidatorStrategy(String value, P parentValidator, Result<NoValue> result, Integer other, Integer another) {
+    public ResultStringHasLengthBetweenValidatorStrategy(String value, P parentValidator, Result<NoValue> result,
+            Integer other, Integer another) {
         super(value, parentValidator, result, other, another);
     }
 
